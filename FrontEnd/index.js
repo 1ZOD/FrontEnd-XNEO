@@ -49,7 +49,7 @@ function loadTasks() {
             taskList.append(taskItem);
           }
         } else {
-          taskList.append('<li>Não há tarefas cadastradas</li>');
+          taskList.append('<li class="container-null">Não há tarefas cadastradas</li>');
         }
       }
     });
