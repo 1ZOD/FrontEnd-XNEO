@@ -1,19 +1,21 @@
 <html>
-<head>
-  <title>To-Do List</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head>
 <body>
-  <h1>To-Do List</h1>
-
-  <form id="task-form">
-    <input type="text" id="task-input" placeholder="Digite uma nova tarefa">
-    <button type="submit">Adicionar</button>
-  </form>
-
-  <ul id="task-list"></ul>
+  <div class="container-main">
+    <div class="container-title">
+      <div class="title">To-Do List</div>
+      <form class="container-form" id="task-form">
+        <input class="input" type="text" id="task-input" placeholder="Digite uma nova tarefa">
+        <button class="submit" type="submit">+</button>
+      </form>
+    </div>  
+    
+    <div class="container-list">
+      <ul id="task-list"></ul>
+    </div>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </body>
 </html>

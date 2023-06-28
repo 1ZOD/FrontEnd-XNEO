@@ -40,8 +40,12 @@ function loadTasks() {
   
         if (data.length > 0) {
           for (var i = 0; i < data.length; i++) {
-            var taskItem = '<li>' + data[i].description + '<button class="delete-button" data-id="' + data[i].id + '">Excluir</button>' +
-                           '<button class="update-button" data-id="' + data[i].id + '">Update</button></li>';
+            var taskItem = '<li class="container-form-options">' + data[i].description +
+            '<div class="actions">'+
+            '<button class="delete-button" data-id="' + data[i].id + '">Excluir</button>' +
+            '<button class="update-button" data-id="' + data[i].id + '">Update</button>'+
+            '<div/>'+
+            '</li>';
             taskList.append(taskItem);
           }
         } else {
